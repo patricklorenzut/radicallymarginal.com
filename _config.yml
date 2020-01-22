@@ -1,0 +1,19 @@
+# Site settings
+title: Radically Marginal
+tagline: Not Life Coaching
+url: "https://radicallymarginal.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
+
+# Social
+socialimg: /images/og.png
+
+# Contact
+email: "patrick@radicallymarginal.com"
+
+# Use this for production
+sass:
+  sass_dir: css
+  style: compressed
+
+collections:
+  - thoughts
+  - transformation

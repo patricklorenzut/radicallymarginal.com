@@ -1,0 +1,20 @@
+article{
+	max-width: 600px;
+    margin: 0 auto;
+    > *, > div > *{
+        margin-bottom: 1.3em;
+    }
+    ol li{
+        margin-left: 1em;
+    }
+    ul li{
+        list-style: disc;
+        margin-left: 2em;
+    } 
+    h2{
+        font-size: 2em;
+        font-family: $font-heading;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+{% include head.html %}
+	
+	<body id="transformation">
+		<div class="wrapper">
+            <div id="left" class="">
+                <div id="left-top-nav">
+                    <h2><span class="navbar-burger burger"><span></span> <span></span> <span></span></span> <span id="logo"><a href="/" class="nuxt-link-active"><img src="/images/logo-white.png"></a></span></h2>
+                </div>
+                <ul>
+                    <li>
+                        <a href="/transformation" {% if page.day == 0 %} class="active" {% else %} class="completed"{% endif %}>
+                            <div class="number-wrapper">0</div> <span>Introduction</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/transformation/1" {% if page.day == 1%} class="active" {% elsif page.day > 1 %} class="completed"{% elsif page.day == 0 %}class="locked"{% endif %}>
+                            <div class="number-wrapper">1</div> <span>Information Overlord</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/transformation/2" {% if page.day == 2 %} class="active"{% else %} class="locked"{% endif %}>
+                            <div class="number-wrapper">2</div> <span>Single-Tasking</span></a>
+                    </li>
+                    <li>
+                        <a href="/transformation/2" class="locked">
+                            <div class="number-wrapper">3</div> <span>The Trouble with Supervolcanoes</span></a>
+                    </li>
+                    <li>
+                        <a href="/transformation/2" class="locked">
+                            <div class="number-wrapper">4</div> <span>Nobody Puts Baby in the Bar Line.</span></a>
+                    </li>
+                    <li>
+                        <a href="/transformation/2" class="locked">
+                            <div class="number-wrapper">5</div> <span>The Meaning of Life</span></a>
+                    </li>
+                    <!---->
+                    <!---->
+                    <li>
+                        <a href="/transformation/2" class="locked">
+                            <div class="number-wrapper">6</div> <span>The Meaning of Life, ctd.</span></a>
+                    </li>
+                    <li>
+                        <a href="/transformation/2" class="locked">
+                            <div class="number-wrapper">7</div> <span>Bend Over, We Have to Show You Something. It’s Important.</span></a>
+                    </li>
+                    <li>
+                        <a href="/transformation/2" class="locked">
+                            <div class="number-wrapper">8</div> <span>Walk Barefoot in the Grass</span></a>
+                    </li>
+                    <li>
+                        <a href="/transformation/2" class="locked">
+                            <div class="number-wrapper">9</div> <span>Happiness is cheap.</span></a>
+                    </li>
+                    <li>
+                        <a href="/transformation/2" class="locked">
+                            <div class="number-wrapper">10</div> <span>It’s Never Too Late.</span></a>
+                    </li>
+                    <!---->
+                    <!---->
+                    <li>
+                        <a href="/transformation/2" class="locked">
+                            <div class="number-wrapper">11</div> <span>Happy Monday, let’s talk about your death.</span></a>
+                    </li>
+                    <li>
+                        <a href="/transformation/2" class="locked">
+                            <div class="number-wrapper">12</div> <span>Creating Hope</span></a>
+                    </li>
+                    <li>
+                        <a href="/transformation/2" class="locked">
+                            <div class="number-wrapper">13</div> <span>Phone badges &amp; other… LOOK A SQUIRREL!</span></a>
+                    </li>
+                    <li>
+                        <a href="/transformation/2" class="locked">
+                            <div class="number-wrapper">14</div> <span>Look behind you.</span></a>
+                    </li>
+                    <li>
+                        <a href="/transformation/2" class="locked">
+                            <div class="number-wrapper">15</div> <span>Don't Think About Malcolm Gladwell</span></a>
+                    </li>
+                    <!---->
+                    <!---->
+                    <li>
+                        <a href="/transformation/2" class="locked">
+                            <div class="number-wrapper">16</div> <span>Imagination → Creativity → Possibility</span></a>
+                    </li>
+                    <li>
+                        <a href="/transformation/2" class="locked">
+                            <div class="number-wrapper">17</div> <span>Possibility ≠ Reality</span></a>
+                    </li>
+                    <li>
+                        <a href="/transformation/2" class="locked">
+                            <div class="number-wrapper">18</div> <span>Self Perception = Reality</span></a>
+                    </li>
+                    <li>
+                        <a href="/transformation/2" class="locked">
+                            <div class="number-wrapper">19</div> <span>Possibility + Self Perception + Effort + Courage = Best Future Reality</span></a>
+                    </li>
+                    <li>
+                        <a href="/transformation/2" class="locked">
+                            <div class="number-wrapper">20</div> <span>Your Best Future Reality = Your Responsibility</span></a>
+                    </li>
+                    <li>
+                        <a href="/transformation/2" class="locked">
+                            <div class="number-wrapper">21</div> <span>You’re Fixed Now</span></a>
+                    </li>
+                    <!---->
+                    <!---->
+                    <!---->
+                    <!---->
+                </ul>
+            </div>
+            <div id="right">
+                <header class="hero">
+                    <div class="hero-body">
+                        <div class="header-inner">
+                            <div class="container">
+                                <h4 class="sans">
+                                    <small>Day #{{ page.day }}</small>
+                                </h4>
+                                <h2><span>{{ page.title }}</span></h2>
+                                <h3>
+                                    <span>{{ page.subtitle }}</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </header>                
+                <div class="container">
+                    <article>                
+                        {{ content }}									
+                    </article>
+                </div>
+            </div>
+		</div>				
+	</body>
+	
+	{% include footer.html %}
+
+</html>
+

@@ -1,0 +1,26 @@
+#transformation{
+    .author-note{
+        &:not(:last-child){
+            margin-bottom: 1.5rem;
+        }
+    }
+    header{
+        h2{
+            margin-bottom: .25em;
+            margin-top: -.5em;
+            font-size: 2em;
+            line-height: 1.1em;
+            font-family: $font-heading;
+        }
+        h3{
+            font-size: 1em;
+            margin: 0;
+            color: $light-blue;
+            font-family: $font-body;
+        }
+        h4{
+            margin-bottom: 1em;
+        }
+        
+    }
+}
