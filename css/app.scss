@@ -288,6 +288,7 @@ section.common-section{
     margin-top: 4em;
     margin-left: auto;
     margin-right: auto;
+    font-size: .9em;
     ul{
         li{
             display: inline-block;
@@ -304,7 +305,12 @@ section.common-section{
     }
     p{
         margin-top: .25em;
-        opacity: .3;
+        color: rgba($dark-blue, 0.3);
+    }
+    strong{
+        font-family: $font-body;
+        font-weight: 700;
+        color: inherit;
     }
 }
 
