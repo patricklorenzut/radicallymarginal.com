@@ -347,3 +347,16 @@ section.common-section{
 @import "_navigation";
 @import "_home";
 @import "_transformation";
+
+
+.email-octopus-form-row-consent{
+    margin: .5em 0 1em !important;
+    .label{
+        input{
+            margin-right: 1em;
+        }
+        *{
+            vertical-align: middle;
+        }
+    }
+}

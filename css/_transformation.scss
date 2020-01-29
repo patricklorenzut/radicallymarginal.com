@@ -24,3 +24,29 @@
         
     }
 }
+
+.too-soon{
+    text-align: left;
+    background: $light-yellow;
+    padding: 1.25em 1.5em;
+    position: relative;
+    .icon{
+        position: absolute;
+        font-size: 25px;
+        top: -47px;
+        left: 50%;
+        margin-left: -12px;
+    }
+    div{
+        margin-bottom: 0!important;
+    }
+    h2{
+        text-align: left!important;
+        font-size: 1.5em!important;
+        margin-bottom: .5em!important;
+    }
+    border-top: 70px solid $dark-yellow;    
+    &.after-midnight{
+        background: $light-blue;
+    }
+}
